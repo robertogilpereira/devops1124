@@ -1,0 +1,15 @@
+#SERVIDORES:
+
+#Host ftp179
+    #HostName 172.23.7.179
+    User roberto
+    Port 22
+    #IdentityFile C:\Users\robertogpl\.ssh\id_rsa
+
+# Rede 172.23.*
+Host 172.23.*
+    User admin
+    KexAlgorithms +diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+    HostKeyAlgorithms +ssh-rsa
+    Ciphers +aes128-cbc,3des-cbc
+    MACs +hmac-sha1,hmac-sha1-96,hmac-md5
